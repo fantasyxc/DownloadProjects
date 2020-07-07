@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>10-块级作用域中的变量</title>
+</head>
+<body>
+	10-块级作用域中的变量测试
+	<!-- <script type="text/javascript" src="10-1.js"></script> -->
+	<!-- <script type="text/javascript" src="10-2.js"></script> -->
+	<script type="text/javascript">
+		var bar = {
+		    myName:"time.geekbang.com",
+		    printName: function () {
+		        console.log(myName)
+		    }    
+		}
+		function foo() {
+		    let myName = " 极客时间 "
+		    return bar.printName
+		}
+		let myName = " 极客邦 "
+		let _printName = foo()
+		_printName()
+		bar.printName()
+
+	</script>
+</body>
+</html>
