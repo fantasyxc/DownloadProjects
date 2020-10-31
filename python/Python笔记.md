@@ -1,18 +1,26 @@
 # Python笔记
+
 ## 1. 字符串输出
 1. 拼串
+
 ```python
 print('Welcome ' + name + ' !')
 ```
+
 2. 多个参数
+
 ```python
 print('Welcome', name, '!')
 ```
+
 3. 占位符
+
 ```python
 print('Welcome %s !' % name)
 ```
+
 4. 格式化字符串
+
 ```python
 print(f'Welcome {name} !')
 ```
